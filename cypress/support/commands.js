@@ -29,11 +29,11 @@ Cypress.Commands.add("createOng", () => {
         method: 'POST',
         url: 'http://localhost:3333/ongs',
         body: {
-            name: "Gatos queridos",
-            email: "gatos@mail.com",
-            whatsapp: "519999999999",
-            city: "Porto Alegre",
-            uf: "RS"    
+            name: "Pets mais Queridos",
+            email: "mais-queridos@pets.com",
+            whatsapp: "22222222222",
+            city: "Nova Friburgo ",
+            uf: "RJ"
         }
     }).then(response => {
         expect(response.body.id).is.not.null;
